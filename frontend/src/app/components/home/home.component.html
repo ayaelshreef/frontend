@@ -1,0 +1,10 @@
+<div id="main">
+  <h1>upload images</h1>
+  <input type="file" [(ngModel)]="photo" (change)="onFileSelected($event)" />
+  <button type="button" (click)="onUpload()">add</button>
+  <div id="post" *ngFor="let post of allData">
+    <p>
+      {{post.photo}}
+    </p>
+  </div>
+</div>
